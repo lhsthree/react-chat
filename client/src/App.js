@@ -5,7 +5,7 @@ import "./index.css";
 import Home from "./Home/Home";
 import ChatRoom from "./ChatRoom/ChatRoom";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Switch>
@@ -15,5 +15,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

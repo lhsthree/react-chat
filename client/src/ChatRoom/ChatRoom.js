@@ -3,7 +3,7 @@ import React from "react";
 import "./ChatRoom.css";
 import useChat from "../UseChat";
 
-const ChatRoom = (props) => {
+export default function ChatRoom(props){
   const { roomId } = props.match.params;
   const { messages, sendMessage } = useChat(roomId);
   const [newMessage, setNewMessage] = React.useState("");
@@ -47,4 +47,3 @@ const ChatRoom = (props) => {
   );
 };
 
-export default ChatRoom;
